@@ -6,7 +6,7 @@ import dash_html_components as html
 
 from dash.dependencies import Input, Output
 
-df = pd.read_csv('https://raw.githubusercontent.com/quanteeai/blog/master/Dash/ul_data.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/quanteeai/dash-simple-example/master/data/ul_data.csv')
 
 app = dash.Dash(__name__)
 server = app.server
@@ -41,4 +41,4 @@ def update_plot(dropdown_value):
     }
             
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
